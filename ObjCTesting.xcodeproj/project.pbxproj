@@ -14,18 +14,14 @@
 		E554272F265AFA1500207CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E554272E265AFA1500207CA0 /* Assets.xcassets */; };
 		E5542732265AFA1500207CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5542730265AFA1500207CA0 /* LaunchScreen.storyboard */; };
 		E554273D265AFA1500207CA0 /* ObjCTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E554273C265AFA1500207CA0 /* ObjCTestingTests.swift */; };
-		E5542748265AFA1500207CA0 /* ObjCTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5542747265AFA1500207CA0 /* ObjCTestingUITests.swift */; };
+		E5542759265AFA3D00207CA0 /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5542758265AFA3D00207CA0 /* SwiftClass.swift */; };
+		E554275A265AFA3D00207CA0 /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5542758265AFA3D00207CA0 /* SwiftClass.swift */; };
+		E5542765265AFAA100207CA0 /* ObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E5542764265AFAA100207CA0 /* ObjCClass.m */; };
+		E5542766265AFAA100207CA0 /* ObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E5542764265AFAA100207CA0 /* ObjCClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		E5542739265AFA1500207CA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E554271A265AFA1200207CA0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5542721265AFA1200207CA0;
-			remoteInfo = ObjCTesting;
-		};
-		E5542744265AFA1500207CA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E554271A265AFA1200207CA0 /* Project object */;
 			proxyType = 1;
@@ -46,9 +42,11 @@
 		E5542738265AFA1500207CA0 /* ObjCTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E554273C265AFA1500207CA0 /* ObjCTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCTestingTests.swift; sourceTree = "<group>"; };
 		E554273E265AFA1500207CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5542743265AFA1500207CA0 /* ObjCTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5542747265AFA1500207CA0 /* ObjCTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCTestingUITests.swift; sourceTree = "<group>"; };
-		E5542749265AFA1500207CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5542758265AFA3D00207CA0 /* SwiftClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftClass.swift; sourceTree = "<group>"; };
+		E5542761265AFAA100207CA0 /* ObjCTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCTesting-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5542762265AFAA100207CA0 /* ObjCTestingTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjCTestingTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5542763265AFAA100207CA0 /* ObjCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCClass.h; sourceTree = "<group>"; };
+		E5542764265AFAA100207CA0 /* ObjCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +64,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5542740265AFA1500207CA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +72,6 @@
 			children = (
 				E5542724265AFA1200207CA0 /* ObjCTesting */,
 				E554273B265AFA1500207CA0 /* ObjCTestingTests */,
-				E5542746265AFA1500207CA0 /* ObjCTestingUITests */,
 				E5542723265AFA1200207CA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +81,6 @@
 			children = (
 				E5542722265AFA1200207CA0 /* ObjCTesting.app */,
 				E5542738265AFA1500207CA0 /* ObjCTestingTests.xctest */,
-				E5542743265AFA1500207CA0 /* ObjCTestingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +91,15 @@
 				E5542725265AFA1200207CA0 /* AppDelegate.swift */,
 				E5542727265AFA1200207CA0 /* SceneDelegate.swift */,
 				E5542729265AFA1200207CA0 /* ViewController.swift */,
+				E5542758265AFA3D00207CA0 /* SwiftClass.swift */,
 				E554272B265AFA1200207CA0 /* Main.storyboard */,
 				E554272E265AFA1500207CA0 /* Assets.xcassets */,
 				E5542730265AFA1500207CA0 /* LaunchScreen.storyboard */,
 				E5542733265AFA1500207CA0 /* Info.plist */,
+				E5542763265AFAA100207CA0 /* ObjCClass.h */,
+				E5542764265AFAA100207CA0 /* ObjCClass.m */,
+				E5542761265AFAA100207CA0 /* ObjCTesting-Bridging-Header.h */,
+				E5542762265AFAA100207CA0 /* ObjCTestingTests-Bridging-Header.h */,
 			);
 			path = ObjCTesting;
 			sourceTree = "<group>";
@@ -117,15 +111,6 @@
 				E554273E265AFA1500207CA0 /* Info.plist */,
 			);
 			path = ObjCTestingTests;
-			sourceTree = "<group>";
-		};
-		E5542746265AFA1500207CA0 /* ObjCTestingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E5542747265AFA1500207CA0 /* ObjCTestingUITests.swift */,
-				E5542749265AFA1500207CA0 /* Info.plist */,
-			);
-			path = ObjCTestingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +151,6 @@
 			productReference = E5542738265AFA1500207CA0 /* ObjCTestingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E5542742265AFA1500207CA0 /* ObjCTestingUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5542752265AFA1500207CA0 /* Build configuration list for PBXNativeTarget "ObjCTestingUITests" */;
-			buildPhases = (
-				E554273F265AFA1500207CA0 /* Sources */,
-				E5542740265AFA1500207CA0 /* Frameworks */,
-				E5542741265AFA1500207CA0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5542745265AFA1500207CA0 /* PBXTargetDependency */,
-			);
-			name = ObjCTestingUITests;
-			productName = ObjCTestingUITests;
-			productReference = E5542743265AFA1500207CA0 /* ObjCTestingUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,13 +162,11 @@
 				TargetAttributes = {
 					E5542721265AFA1200207CA0 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					E5542737265AFA1500207CA0 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = E5542721265AFA1200207CA0;
-					};
-					E5542742265AFA1500207CA0 = {
-						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = E5542721265AFA1200207CA0;
 					};
 				};
@@ -221,7 +186,6 @@
 			targets = (
 				E5542721265AFA1200207CA0 /* ObjCTesting */,
 				E5542737265AFA1500207CA0 /* ObjCTestingTests */,
-				E5542742265AFA1500207CA0 /* ObjCTestingUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +208,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5542741265AFA1500207CA0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +217,8 @@
 			files = (
 				E554272A265AFA1200207CA0 /* ViewController.swift in Sources */,
 				E5542726265AFA1200207CA0 /* AppDelegate.swift in Sources */,
+				E5542765265AFAA100207CA0 /* ObjCClass.m in Sources */,
+				E5542759265AFA3D00207CA0 /* SwiftClass.swift in Sources */,
 				E5542728265AFA1200207CA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,15 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E554275A265AFA3D00207CA0 /* SwiftClass.swift in Sources */,
 				E554273D265AFA1500207CA0 /* ObjCTestingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E554273F265AFA1500207CA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5542748265AFA1500207CA0 /* ObjCTestingUITests.swift in Sources */,
+				E5542766265AFAA100207CA0 /* ObjCClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +240,6 @@
 			isa = PBXTargetDependency;
 			target = E5542721265AFA1200207CA0 /* ObjCTesting */;
 			targetProxy = E5542739265AFA1500207CA0 /* PBXContainerItemProxy */;
-		};
-		E5542745265AFA1500207CA0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5542721265AFA1200207CA0 /* ObjCTesting */;
-			targetProxy = E5542744265AFA1500207CA0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -436,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R858K84KAC;
 				INFOPLIST_FILE = ObjCTesting/Info.plist;
@@ -445,6 +394,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = it.dollos.ObjCTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCTesting/ObjCTesting-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R858K84KAC;
 				INFOPLIST_FILE = ObjCTesting/Info.plist;
@@ -464,6 +416,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = it.dollos.ObjCTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCTesting/ObjCTesting-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -474,6 +427,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R858K84KAC;
 				INFOPLIST_FILE = ObjCTestingTests/Info.plist;
@@ -485,6 +439,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = it.dollos.ObjCTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCTesting/ObjCTestingTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjCTesting.app/ObjCTesting";
@@ -496,6 +452,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R858K84KAC;
 				INFOPLIST_FILE = ObjCTestingTests/Info.plist;
@@ -507,49 +464,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = it.dollos.ObjCTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjCTesting/ObjCTestingTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjCTesting.app/ObjCTesting";
-			};
-			name = Release;
-		};
-		E5542753265AFA1500207CA0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R858K84KAC;
-				INFOPLIST_FILE = ObjCTestingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.dollos.ObjCTestingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ObjCTesting;
-			};
-			name = Debug;
-		};
-		E5542754265AFA1500207CA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R858K84KAC;
-				INFOPLIST_FILE = ObjCTestingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = it.dollos.ObjCTestingUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ObjCTesting;
 			};
 			name = Release;
 		};
@@ -579,15 +497,6 @@
 			buildConfigurations = (
 				E5542750265AFA1500207CA0 /* Debug */,
 				E5542751265AFA1500207CA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5542752265AFA1500207CA0 /* Build configuration list for PBXNativeTarget "ObjCTestingUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5542753265AFA1500207CA0 /* Debug */,
-				E5542754265AFA1500207CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
